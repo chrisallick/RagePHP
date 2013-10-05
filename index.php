@@ -94,7 +94,7 @@
                                     <div class="loading-wrapper">
                                         <img src="./img/loadinfo.net.gif" />
                                     </div>
-                                    <img class="thumb" src="" />
+                                    <img class="thumb" src="./img/blank.gif" />
                                     <div class="whitebox"></div>
                                     <img class="overlay" src="./img/overlay_thumb.png" />
                                     <p class="title"></p>
@@ -103,7 +103,7 @@
                                     <div class="loading-wrapper">
                                         <img src="./img/loadinfo.net.gif" />
                                     </div>
-                                    <img class="thumb" src="" />
+                                    <img class="thumb" src="./img/blank.gif" />
                                     <div class="whitebox"></div>
                                     <img class="overlay" src="./img/overlay_thumb.png" />
                                     <p class="title"></p>
@@ -112,7 +112,7 @@
                                     <div class="loading-wrapper">
                                         <img src="./img/loadinfo.net.gif" />
                                     </div>
-                                    <img class="thumb" src="" />
+                                    <img class="thumb" src="./img/blank.gif" />
                                     <div class="whitebox"></div>
                                     <img class="overlay" src="./img/overlay_thumb.png" />
                                     <p class="title"></p>
@@ -147,7 +147,7 @@
                                     <div class="loading-wrapper">
                                         <img src="./img/loadinfo.net.gif" />
                                     </div>
-                                    <img class="thumb" src="" />
+                                    <img class="thumb" src="./img/blank.gif" />
                                     <div class="whitebox"></div>
                                     <img class="overlay" src="./img/overlay_thumb.png" />
                                     <p class="title"></p>
