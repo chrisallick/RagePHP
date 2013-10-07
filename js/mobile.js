@@ -117,14 +117,13 @@ $(document).ready(function() {
 		console.log(drag_count);
 		drag_count++;
 		$("#header").css({
-			top: "+=1"
+			top: "+=3"
 		});
 		if( drag_count > 40 ) {
 			animating = true;
 			console.log("go!");
 			drag_count = 0;
 			if( !$(this).hasClass("open") ) {
-				
 				$("#header").animate({
 					top: $(this).height() - 115
 				}, 1000, 'easieEaseOutCubic', function(){
