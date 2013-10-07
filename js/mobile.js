@@ -218,11 +218,11 @@ $(document).ready(function() {
 
 	$(hammer_logo).on("swipedown", function() {
 		if( !$(this).hasClass("open") ) {
-			$("#logo").fadeOut();
+			
 			$("#header").animate({
 				top: $(this).height() - 115
 			}, 1000, 'easieEaseOutCubic', function(){
-				$("#logo").css({
+				$("#logo").hide().css({
 					bottom: 'auto',
 					top: 0
 				}).addClass("open").fadeIn();
