@@ -236,8 +236,8 @@ $(document).ready(function() {
 			top: -$(this).height()
 		}, 1000, 'easieEaseOutCubic', function() {
 			$("#logo").css({
-				top: auto,
-				bottom: -215
+				top: 'auto',
+				bottom: -115
 			}).removeClass("open").fadeIn();
 		});
 	});
