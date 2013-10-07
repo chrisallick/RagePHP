@@ -117,7 +117,7 @@ $(document).ready(function() {
 		console.log(drag_count);
 		drag_count++;
 		$("#header").css({
-			top: "+=3"
+			top: "+=5"
 		});
 		if( drag_count > 40 ) {
 			animating = true;
