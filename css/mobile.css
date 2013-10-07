@@ -1,0 +1,100 @@
+/*
+	Global
+*/
+html, body { width: 100%; height: 100%; background-color: #FFFFFF; }
+
+#mti_wfs_colophon { display: none !important; }
+
+img { display: block; }
+
+/*
+	Back to top
+*/
+#backtotop { cursor: pointer; position: fixed; right: 0px; top: 50%; margin-top: -51px; z-index: 10000; display: none; }
+
+/*
+	Header
+*/
+#header { width: 100%; height: 0px; background: #000000; position: absolute; top: 0px; left: 0px; position: relative; }
+#logo { overflow: hidden; width: 215px; height: 116px; display: block; position: absolute; bottom: -116px; left: 212px; cursor: pointer; opacity: 0; background: url("../img/mobile/logo.png") top left no-repeat; background-position: 0px 0px; }
+#logo.open { background-position: -215px 0px; }
+#header .content {
+	display: none; 
+	height: 100%;
+	width: 100%;
+}
+/*#header #navwrapper { position: relative; opacity: 0; width: 1136px; height: 106px; background: url("../img/logo.png") top left no-repeat; background-position: center; margin: 0 auto; }
+#header #navwrapper .nav { opacity: 0; margin: 0 auto; width: 883px; padding-top: 35px; padding-left: 254px;  }
+#header #navwrapper .nav a { float: left; font-size: 14px; font-family:'TradeGothicW01-BoldCn20 675334'; opacity: .7; letter-spacing: 1px; }
+#header #navwrapper .nav .projects { margin-right: 81px; }
+#header #navwrapper .nav .openabout { margin-right: 272px; }
+#header #navwrapper .nav .opencontact { margin-right: 61px; }
+#header #subnavswrapper { width: 100%; height: 104px; background: #000000; display: none;  }
+#header #subnavswrapper #subnavs { width: 1137px; height: 104px; position: relative; margin: 0 auto; }
+#header #subnavswrapper #subnavs .about { position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; padding-top: 21px; display: none; }
+#header #subnavswrapper #subnavs .about p { width: 380px; color: #FFFFFF; font-family: 'Trade Gothic W01 Cn 18'; font-size: 12px; letter-spacing: 1px; line-height: 15px; }
+#header #subnavswrapper #subnavs .about .links { position: absolute; top: 30px; left: 512px; width: 150px; height: 40px; }
+#header #subnavswrapper #subnavs .about .links .flickr { margin-right: 16px; width: 24px; height: 62px; background: url('../img/flickrBtn.png') top left no-repeat; }
+#header #subnavswrapper #subnavs .about .links .flickr:hover { background-position: -24px 0px; }
+#header #subnavswrapper #subnavs .about .links .vimeo { width: 18px; height: 62px; background: url('../img/vimeoBtn.png') top left no-repeat; }
+#header #subnavswrapper #subnavs .about .links .vimeo:hover { background-position: -18px 0px; }
+#header #subnavswrapper #subnavs .about .links .imdb { width: 32px; height: 62px; background: url('../img/imdbBtn.png') top left no-repeat; }
+#header #subnavswrapper #subnavs .about .links .imdb:hover { background-position: -32px 0px; }
+#header #subnavswrapper #subnavs .about .links a { float: left; margin-right: 20px; }
+#header #subnavswrapper #subnavs .contact { position: absolute; width: 500px; height: 100%; top: 0px; left: 0px; padding-left: 255px; padding-top: 48px; display: none; font-family: 'Trade Gothic W01 Cn 18'; font-size: 13px; letter-spacing: 1px; }
+#header #subnavswrapper #subnavs .contact .items .name { float: left; margin-right: 46px; color: #FFFFFF; }
+#header #subnavswrapper #subnavs .contact .items .number { float: left; margin-right: 42px; color: #FFFFFF; }
+#header #subnavswrapper #subnavs .contact .items .email { float: left; color: #FFFFFF; }
+
+#header #subnavswrapper #subnavs #closeheader { cursor: pointer; position: absolute; top: 56px; right: 0px; display: none; width: 65px; height: 10px; }
+#header #subnavswrapper #subnavs #closeheader p { position: absolute; top: 0px; left: 0px; color: #FFFFFF; font: 13px normal 'Trade Gothic W01 Cn 18'; text-transform: uppercase; }
+#header #subnavswrapper #subnavs #closeheader .arrow { position: absolute; bottom: -2px; right: 0px;
+	width: 0px; height: 0px;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 10px solid white;
+
+	-webkit-transition:all .1s ease-in;
+	-moz-transition:all .1s ease-in;
+	-o-transition:all .1s ease-in;
+	transition:all .1s ease-in;
+}
+#header #subnavswrapper #subnavs #closeheader.closing .arrow {
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+}*/
+
+
+/*
+	Rows
+*/
+/*#wrapper { width: 100%; padding-top: 185px; padding-bottom: 160px; min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -62px; display: none; }
+
+.videos { cursor: pointer; width: 1140px; height: 270px; margin: 0 auto; }
+.videos .videothumb { width: 363px; height: 250px; float: left; margin-right: 25px; position: relative; }
+.videos .last { margin: 0; }
+.videos .videothumb .loading-wrapper { position: absolute; top: 0px; left: 0px; width: 364px; height: 204px; z-index: 1; background-color: #F5F5F5; }
+.videos .videothumb .loading-wrapper img { position: absolute; top: 90px; left: 170px; z-index: 1; width: 24px; height: 24px; }
+.videos .videothumb .thumb { position: absolute; top: 0px; left: 0px; width: 364px; height: 204px; margin-bottom: 26px; z-index: 2; }
+.videos .videothumb .title { position: absolute; bottom: 0px; left: 0px; width: 363px; text-align: center; color: #000000; text-transform: uppercase; opacity: .7; }
+.videos .videothumb .title .main { font: normal 16px "TradeGothicW01-BoldCn20 675334"; }
+.videos .videothumb .title .it { font-weight: normal; font: normal 16px "TradeGothicW01-Cn18Obl"; }
+.videos .videothumb .whitebox { position: absolute; top: 0px; left: 0px; width: 364px; height: 204px; opacity: 0; background-color: #FFFFFF; }
+.videos .videothumb .overlay { position: absolute; top: 0px; left: -10px; width: 384px; height: 204px; opacity: 0; z-index: 3;
+	-webkit-transition:all .1s ease-in;
+	-moz-transition:all .1s ease-in;
+	-o-transition:all .1s ease-in;
+	transition:all .1s ease-in;
+}
+.videos .videothumb:hover .whitebox { opacity: .6; z-index: 3;
+	-webkit-transition:all .2s ease-in;
+	-moz-transition:all .2s ease-in;
+	-o-transition:all .2s ease-in;
+	transition:all .2s ease-in;
+}
+.videos .videothumb:hover .overlay { opacity: 1; z-index: 3;
+	-webkit-transition:all .2s ease-in;
+	-moz-transition:all .2s ease-in;
+	-o-transition:all .2s ease-in;
+	transition:all .2s ease-in;
+}*/
