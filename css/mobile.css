@@ -19,10 +19,11 @@ img { display: block; }
 #logo { overflow: hidden; width: 215px; height: 116px; display: block; position: absolute; bottom: -116px; left: 212px; cursor: pointer; opacity: 0; background: url("../img/mobile/logo.png") top left no-repeat; background-position: 0px 0px; }
 #logo.open { background-position: -215px 0px; }
 #header .content {
-	display: none; 
 	height: 100%;
 	width: 100%;
 }
+#header .content h2 { color: #FFFFFF; }
+#header .content p { color: #FFFFFF; }
 /*#header #navwrapper { position: relative; opacity: 0; width: 1136px; height: 106px; background: url("../img/logo.png") top left no-repeat; background-position: center; margin: 0 auto; }
 #header #navwrapper .nav { opacity: 0; margin: 0 auto; width: 883px; padding-top: 35px; padding-left: 254px;  }
 #header #navwrapper .nav a { float: left; font-size: 14px; font-family:'TradeGothicW01-BoldCn20 675334'; opacity: .7; letter-spacing: 1px; }
