@@ -51,8 +51,8 @@
 
         <div id="wrapper" class="scrollable">
             <?php
-                for( $i = 0; $i < count($videos); $i++ ) {
-                //for( $i = 0; $i < 10; $i++ ) {
+                //for( $i = 0; $i < count($videos); $i++ ) {
+                for( $i = 0; $i < 10; $i++ ) {
                     ?>
                         <div class="video" data-role="<?= $videos[$i][1] ?>" data-id="<?= $videos[$i][0] ?>">
                             <div class="loading-wrapper">
