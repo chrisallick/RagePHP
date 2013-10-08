@@ -57,7 +57,8 @@
                             <div class="loading-wrapper">
                                 <img src="./img/loadinfo.net.gif" />
                             </div>
-                            <img class="thumb" src="./img/blank.gif" />
+                            <!-- <img class="thumb" src="./img/blank.gif" /> -->
+                            <iframe class="thumb"></iframe>
                             <p class="title"></p>
                             <div class="role-wrapper">
                                 <p class="role"></p>
