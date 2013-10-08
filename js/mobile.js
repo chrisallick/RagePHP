@@ -1,35 +1,3 @@
-$(window).load(function(){
-	//attach_clicks();
-});
-
-load_categories = function( all ) {
-	all = all || false;
-
-	if( !all ) {
-		var q = "./filter.php?category="+category;
-		$.get(q,function(data){
-			$("#wrapper").html(data).ready(function(){
-				players = [];
-				setup_thumbs(true);
-			});
-		});
-	} else if( all ) {
-		var q = "./filter.php";
-		$.get(q,function(data){
-			$("#wrapper").html(data).ready(function(){
-				players = [];
-				setup_thumbs(true);
-			});
-		});
-	}
-}
-
-show_rows = function() {
-	$(".row").animate({
-		opacity: 1
-	});
-}
-
 setup_thumbs = function(wait) {
 	$(".video").each(function(index,value){
 		if( $(this).data("id") ) {
@@ -57,11 +25,6 @@ setup_thumbs = function(wait) {
 			});			
 		}
 	});
-	if(wait){
-		//attach_clicks();
-
-		show_rows();
-	}
 }
 
 var iframe;
@@ -83,7 +46,9 @@ $(document).ready(function() {
 	// 	e.preventDefault();
 	// });
 
-	$("#logo").animate({
+	$("#logo").css({
+		left: $(window).width()/2 - $("#logo").width()/2
+	}).animate({
 		opacity: 1
 	});
 
