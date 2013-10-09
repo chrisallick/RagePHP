@@ -48,6 +48,7 @@
                 <h1>
                     <a href="#">CV</a>
                 </h1>
+                <div id="uparrow"></div>
             </div>
         </div>
 

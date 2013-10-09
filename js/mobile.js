@@ -52,8 +52,13 @@ $(document).ready(function() {
 		opacity: 1
 	});
 
+	$("#uparrow").css({
+		left: $(window).width()/2 - $("#uparrow").width()/2
+	});
+
 	var hammer_logo = $("#logo").hammer();
 	var hammer_header = $("#header").hammer();
+	var hammer_uparrow = $("#uparrow").hammer();
 
 	$(hammer_logo).on("swipedown", function() {
 		if( !$(this).hasClass("open") ) {
@@ -62,6 +67,7 @@ $(document).ready(function() {
 				top: $(this).height() - 146
 			}, 1000, 'easieEaseOutCubic', function(){
 				$("#header .content").fadeIn();
+				$("#uparrow").fadeIn();
 				$("#logo").hide().css({
 					bottom: 'auto',
 					top: 0
@@ -83,6 +89,7 @@ $(document).ready(function() {
 			drag_count = 0;
 			if( !$(this).hasClass("open") ) {
 				$("#header .content").fadeIn();
+				$("#uparrow").fadeIn();
 				$("#header").animate({
 					top: $(this).height() - 146
 				}, 1000, 'easieEaseOutCubic', function(){
@@ -123,8 +130,25 @@ $(document).ready(function() {
 				}).removeClass("open").fadeIn();
 			});
 		});
+	});
 
-
+	$(hammer_uparrow).on("tap", function(){
+		$("#logo").hide();
+		$("#header .content").animate({
+			opacity: 0
+		}, function(){
+			$("#header").animate({
+				top: -$(this).height()
+			}, 1000, 'easieEaseOutCubic', function() {
+				$("#header .content").animate({
+					opacity: 1
+				});
+				$("#logo").css({
+					top: 'auto',
+					bottom: -146
+				}).removeClass("open").fadeIn();
+			});
+		});
 	});
 
 	// $("#backtotop").click(function(){
