@@ -44,7 +44,7 @@
                 <h1>CONTACT</h1>
                 <p class="padding">R.J. Glass</p>
                 <p class="padding">+1.415.640.8645</p>
-                <p class="padding"><a href="mailto:rj@mynameisrage.com">RJ@MYNAMEISRAGE.COM</a></p>
+                <p class="padding"><a href="mailto:rj@mynameisrage.com">rj@mynameisrage.com</a></p>
                 <h1>
                     <a href="#">CV</a>
                 </h1>
