@@ -59,7 +59,7 @@ $(document).ready(function() {
 		if( !$(this).hasClass("open") ) {
 			animating = true;
 			$("#header").animate({
-				top: $(this).height() - 115
+				top: $(this).height() - 146
 			}, 1000, 'easieEaseOutCubic', function(){
 				$("#header .content").fadeIn();
 				$("#logo").hide().css({
@@ -84,7 +84,7 @@ $(document).ready(function() {
 			if( !$(this).hasClass("open") ) {
 				$("#header .content").fadeIn();
 				$("#header").animate({
-					top: $(this).height() - 115
+					top: $(this).height() - 146
 				}, 1000, 'easieEaseOutCubic', function(){
 					$("#logo").hide().css({
 						bottom: 'auto',
@@ -119,7 +119,7 @@ $(document).ready(function() {
 				});
 				$("#logo").css({
 					top: 'auto',
-					bottom: -115
+					bottom: -146
 				}).removeClass("open").fadeIn();
 			});
 		});

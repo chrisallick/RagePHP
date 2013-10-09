@@ -40,12 +40,14 @@
             <div id="logo"></div>
             <div class="content">
                 <h1>ABOUT</h1>
-                <p>R.J. Glass is a New York based editor, colorist, technical director, and cinematographer. Originally from San Francisco, he attended the Tisch School of the Arts at NYU and received a degree in Film and Television. R.J. is currently the staff editor at Hornet Inc. in New York.</p>
+                <p class="center">R.J. Glass is a New York based editor, colorist, technical director, and cinematographer. Originally from San Francisco, he attended the Tisch School of the Arts at NYU and received a degree in Film and Television. R.J. is currently the staff editor at Hornet Inc. in New York.</p>
                 <h1>CONTACT</h1>
                 <p class="padding">R.J. Glass</p>
                 <p class="padding">+1.415.640.8645</p>
                 <p class="padding">RJ@MYNAMEISRAGE.COM</p>
-                <h1>CV</h1>
+                <h1>
+                    <a href="#">CV</a>
+                </h1>
             </div>
         </div>
 
