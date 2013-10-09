@@ -9,7 +9,7 @@
 
         <meta charset="utf-8">
 
-        <meta name="viewport" content="width=640, initial-scale=.5, maximum-scale=1">
+        <meta name="viewport" content="width=640, initial-scale=.5, maximum-scale=1, user-scalable=no">
         <meta name="format-detection" content="telephone=no">
 
         <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
@@ -44,7 +44,7 @@
                 <h1>CONTACT</h1>
                 <p class="padding">R.J. Glass</p>
                 <p class="padding">+1.415.640.8645</p>
-                <p class="padding">RJ@MYNAMEISRAGE.COM</p>
+                <p class="padding"><a href="mailto:rj@mynameisrage.com">RJ@MYNAMEISRAGE.COM</a></p>
                 <h1>
                     <a href="#">CV</a>
                 </h1>

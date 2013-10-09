@@ -42,6 +42,7 @@ img { display: block; }
 #header .content p { color: #FFFFFF; text-align: center; width: 520px; margin: 0 auto; font: normal 23px 'TradeGothicW01-BoldCn20 675334'; }
 #header .content p.padding { margin-bottom: 30px; }
 #header .content p.center { text-align: justify; }
+#header .content a { color: #FFFFFF; }
 #header .content h1 a { text-decoration: underline; color: #FFFFFF; }
 
 /*
