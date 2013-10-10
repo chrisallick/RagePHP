@@ -1,3 +1,15 @@
+loadMore = function(){
+	numVisibleSections++;
+	var i = 0;
+	$(".hide-now").each(function(index,value){
+		if( i < 9 ) {
+			//console.log( $(this) );	
+			$(this).removeClass("hide-now");
+			i++;
+		}
+	});
+}
+
 setup_thumbs = function(wait) {
 	$(".video").each(function(index,value){
 		if( $(this).data("id") ) {
@@ -30,6 +42,7 @@ setup_thumbs = function(wait) {
 var iframe;
 var drag_count = 0;
 var animating = false;
+var numVisibleSections = 1;
 $(document).ready(function() {
 	setup_thumbs();
 
@@ -157,19 +170,9 @@ $(document).ready(function() {
 	// 	});
 	// });
 
-	// $(window).scroll(function(){
-	// 	currentSubNav = "";
-	// 	$("#subnavs").removeClass().addClass("closed");
-	// 			$("#closeheader").addClass("closing").fadeOut("fast",function(){
-	// 		$(this).removeClass("closing");
-	// 	});
-	// 	$(".subnav").fadeOut("fast");
-	// 	$("#subnavswrapper").slideUp("fast");
-
-	// 	if( $(document).scrollTop()/$(document).height()*100 > 18 && $(".playing-now").length == 0 ) {
-	// 		$("#backtotop").fadeIn();
-	// 	} else {
-	// 		$("#backtotop").fadeOut();
-	// 	}
-	// });
+	$("#wrapper").scroll(function() {
+		if( $("#wrapper").scrollTop() > ($(".video").height()*(8*numVisibleSections)) ) {
+			loadMore();
+		}
+	});
 });
