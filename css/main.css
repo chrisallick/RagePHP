@@ -38,7 +38,7 @@ img { display: block; }
 #header #subnavswrapper #subnavs { width: 1137px; height: 104px; position: relative; margin: 0 auto; }
 #header #subnavswrapper #subnavs .about { position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; padding-top: 21px; display: none; }
 #header #subnavswrapper #subnavs .about p { width: 380px; color: #FFFFFF; font-family: 'Trade Gothic W01 Cn 18'; font-size: 12px; letter-spacing: 1px; line-height: 15px; }
-#header #subnavswrapper #subnavs .about .links { position: absolute; top: 30px; left: 512px; width: 150px; height: 40px; }
+#header #subnavswrapper #subnavs .about .links { position: absolute; top: 29px; left: 512px; width: 150px; height: 40px; }
 #header #subnavswrapper #subnavs .about .links .flickr { margin-right: 16px; width: 24px; height: 62px; background: url('../img/flickrBtn.png') top left no-repeat; }
 #header #subnavswrapper #subnavs .about .links .flickr:hover { background-position: -24px 0px; }
 #header #subnavswrapper #subnavs .about .links .vimeo { width: 18px; height: 62px; background: url('../img/vimeoBtn.png') top left no-repeat; }
@@ -46,7 +46,7 @@ img { display: block; }
 #header #subnavswrapper #subnavs .about .links .imdb { width: 32px; height: 62px; background: url('../img/imdbBtn.png') top left no-repeat; }
 #header #subnavswrapper #subnavs .about .links .imdb:hover { background-position: -32px 0px; }
 #header #subnavswrapper #subnavs .about .links a { float: left; margin-right: 20px; }
-#header #subnavswrapper #subnavs .contact { position: absolute; width: 500px; height: 100%; top: 0px; left: 0px; padding-left: 255px; padding-top: 48px; display: none; font-family: 'Trade Gothic W01 Cn 18'; font-size: 13px; letter-spacing: 1px; }
+#header #subnavswrapper #subnavs .contact { position: absolute; width: 500px; height: 100%; top: 0px; left: 0px; padding-left: 255px; padding-top: 56px; display: none; font-family: 'Trade Gothic W01 Cn 18'; font-size: 13px; letter-spacing: 1px; }
 #header #subnavswrapper #subnavs .contact .items .name { float: left; margin-right: 46px; color: #FFFFFF; }
 #header #subnavswrapper #subnavs .contact .items .number { float: left; margin-right: 42px; color: #FFFFFF; }
 #header #subnavswrapper #subnavs .contact .items .email { float: left; color: #FFFFFF; }
@@ -131,22 +131,21 @@ img { display: block; }
 /*
 	Video Player
 */
-.player-wrapper { position: relative; width: 100%; background-color: #000000; margin-bottom: 20px; background: #000000 url("../img/player/texture.jpg") top left repeat; background-position: center; height: 0px; overflow: hidden; }
+/*.player-wrapper { position: relative; width: 100%; background-color: #000000; margin-bottom: 20px; background: #000000 url("../img/player/texture.jpg") top left repeat; background-position: center; height: 0px; overflow: hidden; }*/
+.player-wrapper { position: relative; width: 100%; background-color: #000000; margin-bottom: 20px; background: #000000 url("../img/player/bg.png") top left no-repeat; background-position: center; height: 0px; overflow: hidden; }
 .player-wrapper .overlay { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(0,0,0,.15); }
-/*.player-wrapper .leftcap { display: none; position: absolute; top: 0px; left: 0px; width: 120px; height: 100%; z-index: 10; background: url("../img/player/leftcap.png") top left no-repeat; }
-.player-wrapper .rightcap { display: none; position: absolute; top: 0px; right: 0px; width: 120px; height: 100%; z-index: 10; background: url("../img/player/rightcap.png") top left no-repeat; }*/
 .player-wrapper .player { z-index: 100; width: 1300px; height: 608px; overflow: hidden; margin: 0 auto; position: relative; opacity: 0; }
 .player-wrapper .player .video-wrapper { background-color: #000000; position: absolute; top: 79px; right: 77px; width: 804px; height: 453px; }
-.player-wrapper .player .close { cursor: pointer; position: absolute; top: 39px; right: 74px; width: 93px; height: 26px; background: url("../img/player/close.png") top left no-repeat; }
-.player-wrapper .player .title { position: absolute; top: 267px; left: 59px; width: 294px; text-align: center; color: #FFFFFF; z-index: 2; text-transform: uppercase; }
+.player-wrapper .player .close { cursor: pointer; position: absolute; top: 39px; right: 76px; width: 93px; height: 26px; background: url("../img/player/close.png") top left no-repeat; }
+.player-wrapper .player .title { position: absolute; top: 241px; left: 59px; width: 294px; text-align: center; color: #FFFFFF; z-index: 2; text-transform: uppercase; }
 .player-wrapper .player .title .main { font-family: "TradeGothicW01-BoldCn20 675334"; font-size: 24px; letter-spacing: 1px; margin-bottom: 5px; }
 .player-wrapper .player .title .mainonly { font-family: "TradeGothicW01-BoldCn20 675334"; font-size: 24px; letter-spacing: 1px; margin-bottom: 5px; padding-top: 28px; }
 .player-wrapper .player .title .sub { font-family: "TradeGothicW01-Cn18Obl"; font-size: 19px; letter-spacing: 1px; padding-right: 5px; }
-.player-wrapper .player .role { position: absolute; top: 358px; left: 59px; width: 294px; text-align: center; color: #000000; font-family: "TradeGothicW01-BoldCn20 675334"; font-size: 18px; z-index: 2; }
+.player-wrapper .player .role { position: absolute; top: 338px; left: 59px; width: 294px; text-align: center; color: #000000; font-family: "TradeGothicW01-BoldCn20 675334"; font-size: 18px; z-index: 2; }
 .player-wrapper .player .role p { padding: 3px 18px 3px 18px; background-color: #FFFFFF; display: inline; }
 
-.player-wrapper .player .rolebgtop { position: absolute; top: 332px; left: -20px; width: 462px; height: 1px; z-index: 1; background: url('../img/player/rolebgtop.png') top left no-repeat; opacity: 0.2; }
-.player-wrapper .player .rolebgbottom { position: absolute; top: 333px; left: -20px; width: 462px; height: 142px;  opacity: 1; z-index: 1; background: url('../img/player/rolebgbottom.png') top left no-repeat; }
+/*.player-wrapper .player .rolebgtop { position: absolute; top: 332px; left: -20px; width: 462px; height: 1px; z-index: 1; background: url('../img/player/rolebgtop.png') top left no-repeat; opacity: 0.2; }
+.player-wrapper .player .rolebgbottom { position: absolute; top: 333px; left: -20px; width: 462px; height: 142px;  opacity: 1; z-index: 1; background: url('../img/player/rolebgbottom.png') top left no-repeat; }*/
 
 /*
 	Footer

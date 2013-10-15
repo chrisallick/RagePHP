@@ -123,8 +123,8 @@
                             <div class="overlay"></div>
                             <div class="leftcap"></div>
                             <div class="player">
-                                <div class="rolebgtop"></div>
-                                <div class="rolebgbottom"></div>
+<!--                                 <div class="rolebgtop"></div>
+                                <div class="rolebgbottom"></div> -->
                                 <div class="title"></div>
                                 <div class="role"><p></p></div>
                                 <div class="video-wrapper">
@@ -161,8 +161,8 @@
                             <div class="overlay"></div>
                             <div class="leftcap"></div>
                             <div class="player">
-                                <div class="rolebgtop"></div>
-                                <div class="rolebgbottom"></div>
+<!--                                 <div class="rolebgtop"></div>
+                                <div class="rolebgbottom"></div> -->
                                 <div class="title"></div>
                                 <div class="role"><p></p></div>
                                 <div class="video-wrapper">
