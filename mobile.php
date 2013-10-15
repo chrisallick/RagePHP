@@ -46,17 +46,17 @@
                 <p class="padding">+1.415.640.8645</p>
                 <p class="padding"><a href="mailto:rj@mynameisrage.com">rj@mynameisrage.com</a></p>
                 <h1>
-                    <a href="#">CV</a>
+                    <a target="_blank" href="http://www.mynameisrage.com/glass_resume.pdf">CV</a>
                 </h1>
-                <div id="uparrow"></div>
+                <div id="uparrow">TAP TO CLOSE</div>
             </div>
         </div>
 
         <div id="wrapper" class="scrollable">
             <?php
                 for( $i = 0; $i < count($videos); $i++ ) {
-                //for( $i = 0; $i < 10; $i++ ) {
-                    if( $i > 9 ) {
+                //for( $i = 0; $i < 4; $i++ ) {
+                    if( $i > 3 ) {
                         ?>
                             <div class="video hide-now" data-role="<?= $videos[$i][1] ?>" data-id="<?= $videos[$i][0] ?>">  
                         <?
@@ -70,7 +70,6 @@
                             <div class="loading-wrapper">
                                 <img src="./img/loadinfo.net.gif" />
                             </div>
-                            <!-- <img class="thumb" src="./img/blank.gif" /> -->
                             <iframe class="thumb"></iframe>
                             <p class="title"></p>
                             <div class="role-wrapper">
@@ -81,9 +80,5 @@
                 }
             ?>
         </div>
-
-<!--         <div id="backtotop">
-            <img src="./img/backtotop.png" />
-        </div> -->
     </body>
 </html>
