@@ -52,7 +52,7 @@ img { display: block; }
 #header #subnavswrapper #subnavs .contact .items .email { float: left; color: #FFFFFF; }
 
 #header #subnavswrapper #subnavs #closeheader { cursor: pointer; position: absolute; top: 56px; right: 0px; display: none; width: 65px; height: 10px; }
-#header #subnavswrapper #subnavs #closeheader p { position: absolute; top: 0px; left: 0px; color: #FFFFFF; font: 13px normal 'Trade Gothic W01 Cn 18'; text-transform: uppercase; }
+#header #subnavswrapper #subnavs #closeheader p { position: absolute; top: 0px; left: 0px; color: #FFFFFF; font-size: 14px; font-family: 'Trade Gothic W01 Cn 18'; text-transform: uppercase; }
 #header #subnavswrapper #subnavs #closeheader .arrow { position: absolute; bottom: -2px; right: 0px;
 	width: 0px; height: 0px;
 	border-left: 7px solid transparent;
@@ -74,7 +74,7 @@ img { display: block; }
 */
 
 #active-label { z-index: 1001; cursor: pointer; height: 20px; position: absolute; bottom: 54px; right: 100px; background: url("../img/labelclose.png") top left no-repeat; padding-left: 24px; display: none; }
-#active-label p { padding: 3px 6px 3px 6px; background-color: #333333; color: #FFFFFF; font: normal 12px 'Trade Gothic W01 Cn 18'; }
+#active-label p { padding: 3px 6px 3px 6px; background-color: #333333; color: #FFFFFF; font-size: 13px; font-family: 'Trade Gothic W01 Cn 18'; }
 
 #categories { width: 86px; height: 16px; position: absolute; bottom: 56px; right: 0px; z-index: 1000; cursor: pointer; }
 #categories .categories-button { width: 100%; height: 100%; }
@@ -106,8 +106,8 @@ img { display: block; }
 .videos .videothumb .loading-wrapper img { position: absolute; top: 90px; left: 170px; z-index: 1; width: 24px; height: 24px; }
 .videos .videothumb .thumb { position: absolute; top: 0px; left: 0px; width: 364px; height: 204px; margin-bottom: 26px; z-index: 2; display: none; }
 .videos .videothumb .title { position: absolute; bottom: 0px; left: 0px; width: 363px; text-align: center; color: #000000; text-transform: uppercase; opacity: .7; }
-.videos .videothumb .title .main { font: normal 16px "TradeGothicW01-BoldCn20 675334"; }
-.videos .videothumb .title .it { font-weight: normal; font: normal 16px "TradeGothicW01-Cn18Obl"; }
+.videos .videothumb .title .main { font-family: "TradeGothicW01-BoldCn20 675334"; font-size: 16px; }
+.videos .videothumb .title .it { font-weight: normal; font-family: "TradeGothicW01-Cn18Obl"; font-size: 16px; }
 .videos .videothumb .whitebox { position: absolute; top: 0px; left: 0px; width: 364px; height: 204px; opacity: 0; background-color: #FFFFFF;
 	-webkit-transition:all .1s ease-in;
 	-moz-transition:all .1s ease-in;
