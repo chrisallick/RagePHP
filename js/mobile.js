@@ -25,7 +25,7 @@ loadMore = function(){
 			    if( data.thumbnail_url ) {
 			    	var thumb_url = data.thumbnail_url;
 			    	//$(".thumb",value).attr('src', thumb_url );
-			    	$(".thumb",value).attr('src', "http://player.vimeo.com/video/"+vid );
+			    	$(".thumb",value).attr('src', "http://player.vimeo.com/video/"+vid+"&title=0" );
 			    }
 			});	
 		}
@@ -37,7 +37,7 @@ setup_thumbs = function(wait) {
 		if( $(this).data("id") && !$(this).hasClass("hide-now") ) {
 			var vid = $(this).data("id");
 			var role = $(this).data("role");
-			$.getJSON('http://vimeo.com/api/oembed.json?url=http%3A//vimeo.com/'+vid+'&width=804&callback=?', {format: "json"}, function(data) {
+			$.getJSON('http://vimeo.com/api/oembed.json?url=http%3A//vimeo.com/'+vid+'&width=804&video=0&callback=?', {format: "json"}, function(data) {
 				if( data.title ) {
 					var title = data.title.replace(/\"/g,'').split(" - ");
 					var new_title = "";
@@ -54,7 +54,7 @@ setup_thumbs = function(wait) {
 			    if( data.thumbnail_url ) {
 			    	var thumb_url = data.thumbnail_url;
 			    	//$(".thumb",value).attr('src', thumb_url );
-			    	$(".thumb",value).attr('src', "http://player.vimeo.com/video/"+vid );
+			    	$(".thumb",value).attr('src', "http://player.vimeo.com/video/"+vid+"?title=0" );
 			    }
 			});			
 		}
