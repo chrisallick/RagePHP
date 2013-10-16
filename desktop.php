@@ -94,7 +94,7 @@
                                     <div class="loading-wrapper">
                                         <img src="./img/loadinfo.net.gif" />
                                     </div>
-                                    <img class="thumb" src="./img/blank.gif" />
+                                    <img class="thumb" src="./img/Blank.gif" />
                                     <div class="whitebox"></div>
                                     <img class="overlay" src="./img/overlay_thumb.png" />
                                     <p class="title"></p>
@@ -103,7 +103,7 @@
                                     <div class="loading-wrapper">
                                         <img src="./img/loadinfo.net.gif" />
                                     </div>
-                                    <img class="thumb" src="./img/blank.gif" />
+                                    <img class="thumb" src="./img/Blank.gif" />
                                     <div class="whitebox"></div>
                                     <img class="overlay" src="./img/overlay_thumb.png" />
                                     <p class="title"></p>
@@ -112,7 +112,7 @@
                                     <div class="loading-wrapper">
                                         <img src="./img/loadinfo.net.gif" />
                                     </div>
-                                    <img class="thumb" src="./img/blank.gif" />
+                                    <img class="thumb" src="./img/Blank.gif" />
                                     <div class="whitebox"></div>
                                     <img class="overlay" src="./img/overlay_thumb.png" />
                                     <p class="title"></p>
@@ -123,8 +123,8 @@
                             <div class="overlay"></div>
                             <div class="leftcap"></div>
                             <div class="player">
-                                <div class="rolebgtop"></div>
-                                <div class="rolebgbottom"></div>
+<!--                                 <div class="rolebgtop"></div>
+                                <div class="rolebgbottom"></div> -->
                                 <div class="title"></div>
                                 <div class="role"><p></p></div>
                                 <div class="video-wrapper">
@@ -147,7 +147,7 @@
                                     <div class="loading-wrapper">
                                         <img src="./img/loadinfo.net.gif" />
                                     </div>
-                                    <img class="thumb" src="./img/blank.gif" />
+                                    <img class="thumb" src="./img/Blank.gif" />
                                     <div class="whitebox"></div>
                                     <img class="overlay" src="./img/overlay_thumb.png" />
                                     <p class="title"></p>
@@ -161,8 +161,8 @@
                             <div class="overlay"></div>
                             <div class="leftcap"></div>
                             <div class="player">
-                                <div class="rolebgtop"></div>
-                                <div class="rolebgbottom"></div>
+<!--                                 <div class="rolebgtop"></div>
+                                <div class="rolebgbottom"></div> -->
                                 <div class="title"></div>
                                 <div class="role"><p></p></div>
                                 <div class="video-wrapper">
