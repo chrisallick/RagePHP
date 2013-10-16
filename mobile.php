@@ -68,7 +68,7 @@
                         ?>
                         
                             <div class="loading-wrapper">
-                                <img src="./img/loadinfo.net.gif" />
+                                <img class="loading-gif" width="24" height="24" src="./img/loadinfo.net.gif" />
                             </div>
                             <iframe class="thumb"></iframe>
                             <p class="title"></p>

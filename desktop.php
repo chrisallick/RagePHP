@@ -12,6 +12,13 @@
         <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
         <link href='./css/main.css?v=3' media='all' rel='stylesheet' type='text/css' />
         
+        <script>
+            var img = new Image();
+            img.onload = function(){
+                // nothing?
+            }
+            img.src = "./img/loadinfo.net.gif";
+        </script>
         <script src='./js/jq.js' type='text/javascript'></script>
         <script src='./js/jq.color.js' type='text/javascript'></script>
         <script src='./js/main.js?v=3' type='text/javascript'></script>
@@ -92,7 +99,7 @@
                             <div class="videos" class="clear">
                                 <div class="videothumb" data-role="<?= $videos[$i*3][1] ?>" data-id="<?= $videos[$i*3][0] ?>">
                                     <div class="loading-wrapper">
-                                        <img src="./img/loadinfo.net.gif" />
+                                        <img class="loading-gif" width="24" height="24" src="./img/loadinfo.net.gif" />
                                     </div>
                                     <img class="thumb" src="./img/Blank.gif" />
                                     <div class="whitebox"></div>
@@ -101,7 +108,7 @@
                                 </div>
                                 <div class="videothumb" data-role="<?= $videos[($i*3)+1][1] ?>" data-id="<?= $videos[($i*3)+1][0] ?>">
                                     <div class="loading-wrapper">
-                                        <img src="./img/loadinfo.net.gif" />
+                                        <img class="loading-gif" width="24" height="24" src="./img/loadinfo.net.gif" />
                                     </div>
                                     <img class="thumb" src="./img/Blank.gif" />
                                     <div class="whitebox"></div>
@@ -110,7 +117,7 @@
                                 </div>
                                 <div class="videothumb last" data-role="<?= $videos[($i*3)+2][1] ?>" data-id="<?= $videos[($i*3)+2][0] ?>">
                                     <div class="loading-wrapper">
-                                        <img src="./img/loadinfo.net.gif" />
+                                        <img class="loading-gif" width="24" height="24" src="./img/loadinfo.net.gif" />
                                     </div>
                                     <img class="thumb" src="./img/Blank.gif" />
                                     <div class="whitebox"></div>
@@ -121,10 +128,7 @@
                         </div>
                         <div class="player-wrapper">
                             <div class="overlay"></div>
-                            <div class="leftcap"></div>
                             <div class="player">
-<!--                                 <div class="rolebgtop"></div>
-                                <div class="rolebgbottom"></div> -->
                                 <div class="title"></div>
                                 <div class="role"><p></p></div>
                                 <div class="video-wrapper">
@@ -132,7 +136,6 @@
                                 </div>
                                 <div class="close"></div>
                             </div>
-                            <div class="rightcap"></div>
                         </div>
                     <?
                 }
@@ -145,7 +148,7 @@
                         ?>
                                 <div class="videothumb" data-role="<?= $videos[($i*3)+$j][1] ?>" data-id="<?= $videos[($i*3)+$j][0] ?>">
                                     <div class="loading-wrapper">
-                                        <img src="./img/loadinfo.net.gif" />
+                                        <img class="loading-gif" width="24" height="24" src="./img/loadinfo.net.gif" />
                                     </div>
                                     <img class="thumb" src="./img/Blank.gif" />
                                     <div class="whitebox"></div>
@@ -159,10 +162,7 @@
                         </div>
                         <div class="player-wrapper">
                             <div class="overlay"></div>
-                            <div class="leftcap"></div>
                             <div class="player">
-<!--                                 <div class="rolebgtop"></div>
-                                <div class="rolebgbottom"></div> -->
                                 <div class="title"></div>
                                 <div class="role"><p></p></div>
                                 <div class="video-wrapper">
@@ -170,7 +170,6 @@
                                 </div>
                                 <div class="close"></div>
                             </div>
-                            <div class="rightcap"></div>
                         </div>
                     <?
                 }
