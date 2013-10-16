@@ -39,7 +39,7 @@ img { display: block; }
 	padding-top: 100px;
 }
 #header .content h1 { color: #FFFFFF; text-align: center; margin: 44px 0px; font: normal 60px 'TradeGothicW01-BoldCn20 675334'; } /* TradeGothicLTStd Cn18 */
-#header .content p { color: #FFFFFF; text-align: center; width: 470px; margin: 0 auto; font: normal 23px 'TradeGothicW01-BoldCn20 675334'; }
+#header .content p { color: #FFFFFF; text-align: center; width: 520px; margin: 0 auto; font: normal 23px 'TradeGothicW01-BoldCn20 675334'; }
 #header .content p.padding { margin-bottom: 20px; }
 #header .content p.center { text-align: justify; }
 #header .content a { color: #FFFFFF; }

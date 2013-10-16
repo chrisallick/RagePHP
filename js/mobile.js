@@ -66,7 +66,14 @@ $(window).load(function() {
 			top: -$(window).height()
 		});
 	}
-})
+});
+
+window.addEventListener("orientationchange", function() {
+	console.log(window.orientation);
+	$("#logo").css({
+		left: $(window).width()/2 - $("#logo").width()/2
+	});
+}, false);
 
 var iframe;
 var drag_count = 0;
