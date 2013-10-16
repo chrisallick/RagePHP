@@ -24,8 +24,7 @@ loadMore = function(){
 				}
 			    if( data.thumbnail_url ) {
 			    	var thumb_url = data.thumbnail_url;
-			    	//$(".thumb",value).attr('src', thumb_url );
-			    	$(".thumb",value).attr('src', "http://player.vimeo.com/video/"+vid+"&title=0" );
+			    	$(".thumb",value).attr('src', "http://player.vimeo.com/video/"+vid+"?title=0" ).show();
 			    }
 			});	
 		}
@@ -53,8 +52,7 @@ setup_thumbs = function(wait) {
 				}
 			    if( data.thumbnail_url ) {
 			    	var thumb_url = data.thumbnail_url;
-			    	//$(".thumb",value).attr('src', thumb_url );
-			    	$(".thumb",value).attr('src', "http://player.vimeo.com/video/"+vid+"?title=0" );
+			    	$(".thumb",value).attr('src', "http://player.vimeo.com/video/"+vid+"?title=0" ).show();
 			    }
 			});			
 		}

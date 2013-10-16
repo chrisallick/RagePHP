@@ -106,7 +106,7 @@ attach_clicks = function() {
 					});
 				}
 			}
-			$(".video-wrapper", player).html('<iframe id="player'+row+'"" src="'+src+'&autoplay=1" width="804" height="453" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
+			$(".video-wrapper", player).html('<iframe id="player'+row+'"" src="'+src+'&autoplay=1&title=0" width="804" height="453" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
 			$(".player",player).animate({
 				opacity: 1
 			});
@@ -167,7 +167,7 @@ setup_thumbs = function(wait) {
 				}
 			    if( data.thumbnail_url ) {
 			    	var thumb_url = data.thumbnail_url;
-			    	$(".thumb",value).attr('src', thumb_url );
+			    	$(".thumb",value).attr('src', thumb_url ).show();
 			    }
 			});			
 		}
