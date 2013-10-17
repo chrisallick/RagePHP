@@ -176,6 +176,10 @@ setup_thumbs = function(wait) {
 		attach_clicks();
 
 		show_rows();
+
+		$("html,body").animate({
+			scrollTop: 0
+		});
 	}
 }
 
