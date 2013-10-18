@@ -132,7 +132,7 @@ load_categories = function( all ) {
 			});
 		});
 	} else if( all ) {
-		var q = "./filter.php";
+		var q = "./filter.php?category=";
 		$.get(q,function(data){
 			$("#wrapper").html(data).ready(function(){
 				players = [];

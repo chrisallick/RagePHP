@@ -1,73 +1,30 @@
-<?
-    $videos = array(
-        array("64569098", "CINEMATOGRAPHER"),
-        array("64667738", "CINEMATOGRAPHER"),
-        array("70576792", "CINEMATOGRAPHER"),
-        array("65594556", "TECHNICAL DIRECTOR"),
-        array("67910049", "TECHNICAL DIRECTOR"),
-        array("67910050", "TECHNICAL DIRECTOR"),
-        array("18675123", "DIRECTOR"),
-        array("65181082", "COLORIST"),
-        array("65181544", "COLORIST"),
-        array("65575797", "COLORIST"),
-        array("65575798", "COLORIST"),
-        array("65575799", "COLORIST"),
-        array("65575800", "COLORIST"),
-        array("65575801", "COLORIST"),
-        array("65594557", "COLORIST"),
-        array("67254716", "COLORIST"),
-        array("67254717", "COLORIST"),
-        array("67900223", "COLORIST"),
-        array("61212088", "EDITOR" ),
-        array("61212089", "EDITOR" ),
-        array("61212090", "EDITOR" ),
-        array("64667737", "EDITOR" ),
-        array("65181084", "EDITOR" ),
-        array("65181087", "EDITOR" ),
-        array("65181088", "EDITOR" ),
-        array("65594554", "EDITOR" ),
-        array("65594555", "EDITOR" ),
-        array("67900224", "EDITOR" ),
-        array("67900225", "EDITOR" ),
-        array("67900226", "EDITOR" ),
-        array("67906978", "EDITOR" ),
-        array("67906979", "EDITOR" ),
-        array("67906982", "EDITOR" ),
-        array("67906983", "EDITOR" ),
-        array("67909282", "EDITOR" ),
-        array("67909283", "EDITOR" ),
-        array("67909284", "EDITOR" ),
-        array("67909285", "EDITOR" ),
-        array("67909286", "EDITOR" ),
-        array("68253601", "EDITOR" ),
-        array("68253602", "EDITOR" ),
-        array("68253604", "EDITOR" ),
-        array("68253608", "EDITOR" ),
-        array("68255250", "EDITOR" ),
-        array("68255251", "EDITOR" ),
-        array("68255253", "EDITOR" ),
-        array("68258983", "EDITOR" ),
-        array("68258980", "EDITOR" ),
-        array("68258985", "EDITOR" ),
-        array("68258986", "EDITOR" ),
-        array("68258987", "EDITOR" ),
-        array("68260800", "EDITOR" ),
-        array("68260801", "EDITOR" ),
-        array("68260802", "EDITOR" ),
-        array("68260804", "EDITOR" ),
-        array("68261947", "EDITOR" ),
-        array("68262231", "EDITOR" ),
-        array("68262234", "EDITOR" ),
-        array("68262235", "EDITOR" ),
-        array("68262238", "EDITOR" ),
-        array("68262239", "EDITOR" ),
-        array("68266279", "EDITOR" ),
-        array("68266280", "EDITOR" ),
-        array("68266281", "EDITOR" ),
-        array("70420546", "EDITOR" ),
-        array("70420547", "EDITOR" ),
-        array("70420553", "EDITOR" ),
-        array("70420554", "EDITOR" ),
-        array("70420555", "EDITOR" )
-    );
+<?php
+    $raw = array();
+    $keys = array();
+    $videos = array();
+
+    $spreadsheet_url="https://docs.google.com/spreadsheet/pub?key=0AqxsTh_PqRW4dENLanpFa2lXV1NsV2hNMUF0ay1Sd2c&gid=0&output=csv";
+
+    if(!ini_set('default_socket_timeout',    15)) echo "<!-- unable to change socket timeout -->";
+
+    if (($handle = fopen($spreadsheet_url, "r")) !== FALSE) {
+        while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+            $item = array( $data[0] , $data[1] );
+            array_push( $raw, $item );
+        }
+        fclose($handle);
+    }
+
+    for( $i = 0; $i < count($raw); $i++ ) {
+        if( !in_array($raw[$i][0], $keys) ) {
+            array_push( $videos, $raw[$i] );
+            array_push( $keys, $raw[$i][0] );
+        }
+    }
+
+    // echo count($raw) . "<br/>";
+    // echo count($videos) . "<br/>";
+
+    // print_r( $raw );
+    // print_r( $videos );
 ?>
