@@ -2,12 +2,12 @@
 	include "./videos.php";
 
 	$new_videos = array();
-    if( $_GET["category"] ) {
+    if( $_GET["category"] != "" ) {
         $cat = $_GET["category"];
         
         for( $i = 0; $i < count($videos); $i++ ) {
-            if( $videos[$i][1] == $cat ) {
-                $item = array( $videos[$i][0] , $videos[$i][1] );
+            if( strtolower($videos[$i][1]) == strtolower($cat) ) {
+                $item = array( $raw[$i][0] , $raw[$i][1] );
  				array_push( $new_videos, $item );
             }
         }
