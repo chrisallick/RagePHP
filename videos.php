@@ -9,6 +9,7 @@
 
     if (($handle = fopen($spreadsheet_url, "r")) !== FALSE) {
         while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+            //echo $data[0] . ", " . $data[1] . "<br/>";
             $item = array( $data[0] , $data[1] );
             array_push( $raw, $item );
         }

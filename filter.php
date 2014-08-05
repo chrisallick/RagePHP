@@ -7,7 +7,9 @@
         
         for( $i = 0; $i < count($videos); $i++ ) {
             if( strtolower($videos[$i][1]) == strtolower($cat) ) {
-                $item = array( $raw[$i][0] , $raw[$i][1] );
+                //$item = array( $raw[$i][0] , $raw[$i][1] ); // why did i have this as raw?
+                $item = array( $videos[$i][0] , $videos[$i][1] );
+
  				array_push( $new_videos, $item );
             }
         }
