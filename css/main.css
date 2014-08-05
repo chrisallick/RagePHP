@@ -74,7 +74,7 @@ img { display: block; }
 */
 
 #active-label { z-index: 1001; cursor: pointer; height: 20px; position: absolute; bottom: 54px; right: 100px; background: url("../img/labelclose.png") top left no-repeat; padding-left: 24px; display: none; }
-#active-label p { padding: 3px 6px 3px 6px; background-color: #333333; color: #FFFFFF; font-size: 13px; font-family: 'Trade Gothic W01 Cn 18'; }
+#active-label p { padding: 4px 6px 3px 6px; background-color: #333333; color: #FFFFFF; font-size: 13px; font-family: 'Trade Gothic W01 Cn 18'; }
 
 #categories { width: 86px; height: 16px; position: absolute; bottom: 56px; right: 0px; z-index: 1000; cursor: pointer; }
 #categories .categories-button { width: 100%; height: 100%; }
