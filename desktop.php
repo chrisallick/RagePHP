@@ -42,7 +42,7 @@
             <div id="subnavswrapper">
                 <div id="subnavs" class="closed">
                     <div class="about subnav">
-                        <p>R.J. Glass is a New York based editor, colorist, technical director, and cinematographer. Originally from San Francisco, he attended the Tisch School of the Arts at NYU and received a degree in Film and Television. R.J. is currently the staff editor at Hornet Inc. in New York.</p>
+                        <p>R.J. Glass is a New York based editor, colorist, technical director, and cinematographer. Originally from San Francisco, he attended the Tisch School of the Arts at NYU and received a degree in Film and Television. R.J. is currently available for freelance bookings.</p>
                         <div class="links clear">
                             <a class="vimeo" href="http://vimeo.com/mynameisrage"></a>
                             <a class="flickr" href="http://www.flickr.com/photos/rager"></a>
