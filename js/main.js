@@ -115,6 +115,18 @@ attach_clicks = function() {
 }
 
 $(window).load(function(){
+	setup_thumbs();
+
+	$("#navwrapper .nav").animate({
+		opacity: 1
+	});
+
+	$("#navwrapper").animate({
+		opacity: 1
+	});
+
+	show_rows();
+	
 	attach_clicks();
 });
 
@@ -224,17 +236,7 @@ $(document).ready(function() {
         });
     }
 
-	setup_thumbs();
 
-	$("#navwrapper .nav").animate({
-		opacity: 1
-	});
-
-	$("#navwrapper").animate({
-		opacity: 1
-	});
-
-	show_rows();
 
 	$("#categories li").click(function(event){
 		if( $(this).hasClass("on") ) {
