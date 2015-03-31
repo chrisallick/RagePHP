@@ -226,15 +226,15 @@ $(document).ready(function() {
 
 	setup_thumbs();
 
+	$("#navwrapper .nav").animate({
+		opacity: 1
+	});
+
 	$("#navwrapper").animate({
 		opacity: 1
-	}, function() {
-		$("#navwrapper .nav").animate({
-			opacity: 1
-		}, function() {
-			show_rows();
-		});
 	});
+
+	show_rows();
 
 	$("#categories li").click(function(event){
 		if( $(this).hasClass("on") ) {
